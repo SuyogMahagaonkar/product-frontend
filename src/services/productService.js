@@ -1,7 +1,8 @@
 // src/services/productService.js
 import axios from 'axios';
 
-const API = 'http://localhost:8080/api/products';
+const API = 'https://product-inventory-backend-jrnq.onrender.com/api/products';
+
 
 export const addProduct = (product) => axios.post(`${API}/add`, product);
 export const deleteProduct = (id) => axios.delete(`${API}/delete/${id}`);
