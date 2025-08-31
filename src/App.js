@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ProductList from './components/ProductList';
@@ -12,7 +11,7 @@ import Breadcrumbs from './components/Breadcrumbs';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/product-frontend">
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
                     <Link className="navbar-brand" to="/">Product Inventory</Link>
@@ -25,7 +24,6 @@ function App() {
                     </div>
                 </nav>
 
-                {/* ✅ Breadcrumbs */}
                 <Breadcrumbs />
 
                 <ToastContainer position="top-center" />
